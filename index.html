@@ -8,8 +8,9 @@
 
     // Wait for Cordova to load
     //
+    function onLoad(){
     document.addEventListener("deviceready", onDeviceReady, false);
-
+    }
     // Cordova is ready
     function onDeviceReady() {
          var ref = window.open('http://www.pouletdugers.com', '_blank', 'location=yes');
@@ -19,6 +20,6 @@
     }
     </script>
   </head>
-  <body>
+  <body onLoad="onLoad()">
   </body>
 </html>
